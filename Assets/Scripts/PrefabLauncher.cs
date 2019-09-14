@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class PrefabLauncher : MonoBehaviour
 {
-    public LayerMask groundMask;
+    public Transform origin;
     public GameObject instantiatedPrefab;
     public GameObject targetPrefab;
-
     public float timeBeforeLaunch = 1f;
     public float launchForce = 20f;
+
+    public LayerMask groundMask;
+
+    
 
     void Start()
     {
