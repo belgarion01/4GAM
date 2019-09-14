@@ -396,6 +396,7 @@ GameObject:
   - component: {fileID: 8074357743161788988}
   - component: {fileID: 8329791066615975823}
   - component: {fileID: 6840968255928562357}
+  - component: {fileID: 8555510468666411021}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -586,6 +587,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8555510468666411021}
+        m_MethodName: Launch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6840968255928562357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -627,6 +639,33 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   invulnerableTime: 2
+--- !u!114 &8555510468666411021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6224024575180743303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f171ac241117474284e1d60a21cf88e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seconds: 1
+  onFinish:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6224024575180743309}
+        m_MethodName: SetMovement
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &6224024575232341372
 GameObject:
   m_ObjectHideFlags: 0
