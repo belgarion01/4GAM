@@ -5,8 +5,6 @@ namespace Game
 {
 	public class Pushable : MonoBehaviour
 	{
-		public bool lul = false;
-
 		public new Rigidbody rigidbody = default;
 		public float forceMultiplier = 1f;
 		public ForceMode forceMode = ForceMode.Impulse;
@@ -23,11 +21,5 @@ namespace Game
 		}
 
 		public void SetPushable(bool value) => canPush = value;
-
-		private void OnGUI()
-		{
-			if (lul)
-				GUILayout.Label($"{gameObject.name} {transform.position} {rigidbody.velocity}");
-		}
 	}
 }
