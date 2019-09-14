@@ -81,6 +81,7 @@ public class BirdScript : MonoBehaviour {
 
         // Delete ourselves if disconnected
         m_gamepad.OnDisconnect += Remove;
+        
     }
 
     void Remove()

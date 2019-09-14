@@ -32,7 +32,7 @@ namespace Game
 		private void HandleInput()
 		{
 			float horizontal = Input.GetAxis(InputHorizontalName) + input.GetAxis(InputHorizontalName);
-			float vertical = Input.GetAxis(InputVerticalName) + input.GetAxis(InputVerticalName);
+			float vertical = Input.GetAxis(InputVerticalName) - input.GetAxis(InputVerticalName);
 			movement = new Vector3(horizontal, 0f, vertical);
 			if (movement.magnitude > 1) movement = movement.normalized;
 		}
@@ -40,7 +40,7 @@ namespace Game
 		private void Move()
 		{
 			if (!canMove) return;
-			rigidbody.velocity = movement * movementForce;
+			rigidbody.velocity = movement * movementForce + Physics.gravity;
 		}
 
 		private void Rotate()
