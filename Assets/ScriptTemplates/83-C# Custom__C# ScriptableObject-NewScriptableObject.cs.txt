@@ -1,0 +1,10 @@
+#COMMENT#using UnityEngine;
+
+namespace Game
+{
+    [CreateAssetMenu]
+    public class #SCRIPTNAME# : ScriptableObject
+    {
+        
+    }
+}

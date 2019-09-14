@@ -1,0 +1,14 @@
+#COMMENT#using DG.Tweening;
+using UnityEngine;
+
+namespace Tweening
+{
+	using static TweenMenu;
+	[CreateAssetMenu(fileName = nameof(#SCRIPTNAME#), menuName = Main + nameof(#SCRIPTNAME#), order = Order)]
+	public class #SCRIPTNAME# : ScriptableObjectTween
+	{
+		
+
+		//public override void Do(Transform transform) => Do(transform.DOMove());
+	}
+}

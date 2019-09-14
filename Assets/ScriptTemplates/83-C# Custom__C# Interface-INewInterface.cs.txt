@@ -1,0 +1,7 @@
+#COMMENT#namespace Game
+{
+    public interface #SCRIPTNAME#
+    {
+        void ExempleMethod();
+    }
+}

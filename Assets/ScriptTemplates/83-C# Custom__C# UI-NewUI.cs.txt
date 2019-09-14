@@ -1,0 +1,15 @@
+#COMMENT#using UnityEngine;
+using UnityEngine.UI;
+
+namespace Game
+{
+    public class #SCRIPTNAME# : MonoBehaviour
+    {
+        [SerializeField] private Image image = default;
+
+        private void Start()
+        {
+            this.image.enabled = true;
+        }
+    }
+}

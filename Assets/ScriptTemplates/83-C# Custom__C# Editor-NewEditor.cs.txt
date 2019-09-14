@@ -1,0 +1,15 @@
+﻿#COMMENT#using UnityEngine;
+using UnityEditor;
+
+namespace Game.Editor
+{
+	using Editor = UnityEditor.Editor;
+	[CustomEditor(typeof(#SCRIPTNAME#))]
+	public class #SCRIPTNAME# : Editor
+	{
+		public override void OnInspectorGUI()
+		{
+			base.OnInspectorGUI();
+		}
+	}
+}

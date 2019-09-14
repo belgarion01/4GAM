@@ -1,0 +1,18 @@
+#COMMENT#using DG.Tweening;
+using UnityEngine;
+
+namespace Tweening
+{
+	using static TweenMenu;
+	[CreateAssetMenu(fileName = nameof(#SCRIPTNAME#), menuName = Modules + nameof(#SCRIPTNAME#), order = Order)]
+	public class #SCRIPTNAME# : TweenModule
+	{
+		
+		
+		protected override void Set(Tweener tweener)
+		{
+			base.Set(tweener);
+			//tween
+		}
+	}
+}
