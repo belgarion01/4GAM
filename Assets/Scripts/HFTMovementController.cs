@@ -47,8 +47,8 @@ namespace Game
 
 		private void HandleInput()
 		{
-			float horizontal = Input.GetAxisRaw(InputHorizontalName) + input.GetAxis(InputHorizontalName);
-			float vertical = Input.GetAxisRaw(InputVerticalName) - input.GetAxis(InputVerticalName);
+			float horizontal = input.GetAxis(InputHorizontalName);
+			float vertical =  - input.GetAxis(InputVerticalName);
 			movement = new Vector3(horizontal, 0f, vertical);
 			if (movement.magnitude > 1) movement = movement.normalized;
 		}
