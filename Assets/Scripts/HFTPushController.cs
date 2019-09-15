@@ -17,7 +17,7 @@ namespace Game
 
 		private void HandleInput()
 		{
-			bool pressed = input.GetButtonDown(InputPushButton) || Input.GetButtonDown(InputPushButton);
+			bool pressed = input.GetButtonDown(InputPushButton);
 			if (!pressed) return;
 			onPressButton?.Invoke();
 		}

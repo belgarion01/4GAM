@@ -1,8 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.UI;
 
 public class PrefabLauncher : MonoBehaviour
 {
@@ -14,7 +12,6 @@ public class PrefabLauncher : MonoBehaviour
 
     public float lauchCooldown;
     private float currentLaunchCooldown;
-    public Slider cooldownSlider;
     bool launchReady = true;
 
     public LayerMask clickableMask;
@@ -23,12 +20,6 @@ public class PrefabLauncher : MonoBehaviour
     public UnityEvent OnClickFail;
     public UnityEvent OnLaunching;
     public UnityEvent OnLaunchReady;
-
-    private void Awake()
-    {
-        cooldownSlider.maxValue = lauchCooldown;
-    }
-
 
     void Update()
     {
@@ -48,7 +39,6 @@ public class PrefabLauncher : MonoBehaviour
                 OnClickFail.Invoke();
             }
         }
-        UpdateUI();
     }
 
     IEnumerator LaunchPrefab(Vector3 direction) {
@@ -56,9 +46,5 @@ public class PrefabLauncher : MonoBehaviour
         GameObject bol = Instantiate(instantiatedPrefab, origin.position, Quaternion.identity);
         bol.GetComponent<Rigidbody>().AddForce(direction * launchForce, ForceMode.VelocityChange);
         OnLaunching.Invoke();
-    }
-
-    void UpdateUI() {
-        cooldownSlider.value = currentLaunchCooldown;
     }
 }
