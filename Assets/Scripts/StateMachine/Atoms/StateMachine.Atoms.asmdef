@@ -1,0 +1,16 @@
+{
+    "name": "StateMachine.Atoms",
+    "references": [
+        "GUID:b93145fac8a027243a0df601ed493a79",
+        "GUID:ba6306d56f3b240879571be967cb9285"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}

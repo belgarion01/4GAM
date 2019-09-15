@@ -1,0 +1,14 @@
+{
+    "name": "com.narudgi.unity-atoms",
+    "displayName": "Unity Atoms",
+    "version": "0.5.7",
+    "unity": "2019.1",
+    "description": 
+        "Tiny modular pieces utilizing the power of Scriptable Objects\nEwan Argouse modifications based on https://github.com/AdamRamberg/unity-atoms canary v2.0",
+    "keywords": [
+        "scriptableobject",
+        "unity",
+        "atoms"
+    ],
+    "category": "Unity"
+}

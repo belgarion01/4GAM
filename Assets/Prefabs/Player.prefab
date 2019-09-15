@@ -266,6 +266,8 @@ GameObject:
   - component: {fileID: 8329791066615975823}
   - component: {fileID: 6840968255928562357}
   - component: {fileID: 8555510468666411021}
+  - component: {fileID: 3527032995908215132}
+  - component: {fileID: -6501501601929374067}
   m_Layer: 11
   m_Name: Player
   m_TagString: Untagged
@@ -387,6 +389,20 @@ MonoBehaviour:
   input: {fileID: 6224024575180743311}
   movementForce: 20
   rotationForce: 20
+  onMove:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -6501501601929374067}
+        m_MethodName: SetBool
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8074357743161788988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -533,6 +549,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!114 &3527032995908215132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6224024575180743303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96281adab743e8744ad899c2d33e0c56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6224024575180743303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39274b14b3557a042bca7aba1f4a4f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 8835752637826139633}
+  paramaterName: 
 --- !u!1 &6224024575232341372
 GameObject:
   m_ObjectHideFlags: 0
