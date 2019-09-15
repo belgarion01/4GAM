@@ -91,6 +91,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616070}
   - {fileID: 8926484042661616072}
   - {fileID: 8926484042661616076}
+  - {fileID: 8926484042661616085}
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
   m_UISuperCollapsed: 0
@@ -390,9 +391,9 @@ MonoBehaviour:
   uiBounds:
     serializedVersion: 2
     x: 1703
-    y: -597
+    y: -680
     width: 2814
-    height: 3641
+    height: 3726
 --- !u!114 &114304386559384632
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1878,7 +1879,7 @@ VisualEffectResource:
         data: 00000000
     m_Events:
     - name: OnPlay
-      playSystems: 00000000
+      playSystems: 0000000000000000
       stopSystems: 
     - name: OnStop
       playSystems: 
@@ -2101,7 +2102,7 @@ MonoBehaviour:
   m_Children:
   - {fileID: 8926484042661616082}
   - {fileID: 8926484042661615148}
-  m_UIPosition: {x: 3978, y: -597}
+  m_UIPosition: {x: 4010, y: -457}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
@@ -2109,7 +2110,9 @@ MonoBehaviour:
   m_Label: 
   m_Data: {fileID: 0}
   m_InputFlowSlot:
-  - link: []
+  - link:
+    - context: {fileID: 8926484042661616085}
+      slotIndex: 0
   - link: []
   m_OutputFlowSlot:
   - link:
@@ -7992,3 +7995,31 @@ MonoBehaviour:
       m_RegexMaxLength: 0
   m_Direction: 0
   m_LinkedSlots: []
+--- !u!114 &8926484042661616085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2461f61b3c026d54db1951a4e17ab20e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Parent: {fileID: 114096792637759078}
+  m_Children: []
+  m_UIPosition: {x: 3990, y: -680}
+  m_UICollapsed: 0
+  m_UISuperCollapsed: 0
+  m_InputSlots: []
+  m_OutputSlots: []
+  m_Label: 
+  m_Data: {fileID: 0}
+  m_InputFlowSlot:
+  - link: []
+  m_OutputFlowSlot:
+  - link:
+    - context: {fileID: 8926484042661614939}
+      slotIndex: 0
+  eventName: OnPlay
