@@ -7801,15 +7801,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c11f508a12388fd40a4214e6dc4a5910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 512
+  origin: {fileID: 1530782570}
   instantiatedPrefab: {fileID: 6620432894544469509, guid: b81b868436d868f4dac307be579e7ae9,
     type: 3}
   targetPrefab: {fileID: 334855352644154904, guid: efa01b75943561c46a2144c732a0ccdc,
     type: 3}
   timeBeforeLaunch: 1
   launchForce: 25
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!114 &1530782572
 MonoBehaviour:
   m_ObjectHideFlags: 0
