@@ -36,7 +36,8 @@ namespace Game
 
 		private void Update()
 		{
-			observeMovement.Observe(movement.magnitude > .1f);
+			//observeMovement.Observe(movement.magnitude > 0f);
+			onMove?.Invoke(movement.magnitude > 0f);
 
 			HandleInput();
 
