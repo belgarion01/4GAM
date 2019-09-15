@@ -89,14 +89,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335974642367228802}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696369503762149
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -123,6 +123,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &428950546011759691
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,14 +218,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 428950546011759691}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368996311895
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -246,6 +252,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &817788926884361817
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,14 +347,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 817788926884361817}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368432672592
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -369,6 +381,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &833281225823904722
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,14 +476,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 833281225823904722}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696369390134758
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -492,6 +510,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &860742715306273251
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,7 +549,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8024466932918366004}
-  m_RootOrder: 39
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2608768999347756530
 MeshFilter:
@@ -581,14 +605,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 860742715306273251}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368629800105
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -615,6 +639,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &1062038342337109156
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,7 +678,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8024466932918366004}
-  m_RootOrder: 43
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6355665762833288941
 MeshFilter:
@@ -704,14 +734,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1062038342337109156}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696369320426215
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -738,6 +768,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &1358719649429864428
 GameObject:
   m_ObjectHideFlags: 0
@@ -827,14 +863,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1358719649429864428}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368986600849
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -861,6 +897,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &1669819476117960152
 GameObject:
   m_ObjectHideFlags: 0
@@ -950,14 +992,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1669819476117960152}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368130458772
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -984,6 +1026,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &2092088042436427775
 GameObject:
   m_ObjectHideFlags: 0
@@ -1073,14 +1121,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2092088042436427775}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368898145562
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1107,6 +1155,141 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
+--- !u!1 &2424736427628783838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3811621460164485242}
+  - component: {fileID: 9029612121825194637}
+  - component: {fileID: 6683942349255706165}
+  - component: {fileID: 5971615555946399673}
+  - component: {fileID: 5115842783152933676}
+  - component: {fileID: 2404931354207277001}
+  m_Layer: 0
+  m_Name: Cylinder_cell.141 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3811621460164485242
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2424736427628783838}
+  m_LocalRotation: {x: -0.24444045, y: 0.6635126, z: 0.6635126, w: 0.24444045}
+  m_LocalPosition: {x: 6.73, y: 0, z: 4.14}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_Children: []
+  m_Father: {fileID: 8024466932918366004}
+  m_RootOrder: 60
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 139.552}
+--- !u!33 &9029612121825194637
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2424736427628783838}
+  m_Mesh: {fileID: 7240309515155227688, guid: f089b4ae9a54eca45b7c1e9c569ded60, type: 3}
+--- !u!23 &6683942349255706165
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2424736427628783838}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: c1568f6b846552c4b82e738690372b85, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!54 &5971615555946399673
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2424736427628783838}
+  serializedVersion: 2
+  m_Mass: 10
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
+--- !u!64 &5115842783152933676
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2424736427628783838}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 7240309515155227688, guid: f089b4ae9a54eca45b7c1e9c569ded60, type: 3}
+--- !u!114 &2404931354207277001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2424736427628783838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &2703781733421379848
 GameObject:
   m_ObjectHideFlags: 0
@@ -1140,7 +1323,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8024466932918366004}
-  m_RootOrder: 49
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1579295201014102278
 MeshFilter:
@@ -1196,14 +1379,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2703781733421379848}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696369889665840
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1230,6 +1413,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &2826483409175620586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1319,14 +1508,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2826483409175620586}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696369858927287
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1353,6 +1542,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &2967582703887996546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1386,7 +1581,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8024466932918366004}
-  m_RootOrder: 40
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4655235925991447942
 MeshFilter:
@@ -1442,14 +1637,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2967582703887996546}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696369832890740
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1476,6 +1671,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &3433279469315412493
 GameObject:
   m_ObjectHideFlags: 0
@@ -1565,14 +1766,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3433279469315412493}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368744789374
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1599,6 +1800,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &3466101135467170640
 GameObject:
   m_ObjectHideFlags: 0
@@ -1632,7 +1839,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8024466932918366004}
-  m_RootOrder: 57
+  m_RootOrder: 56
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2125022610112897326
 MeshFilter:
@@ -1688,14 +1895,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3466101135467170640}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696369853023937
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1722,6 +1929,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &3474827492278194134
 GameObject:
   m_ObjectHideFlags: 0
@@ -1755,7 +1968,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8024466932918366004}
-  m_RootOrder: 55
+  m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &831114842543227565
 MeshFilter:
@@ -1811,14 +2024,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3474827492278194134}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696369581562234
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1845,6 +2058,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &3507999196119151145
 GameObject:
   m_ObjectHideFlags: 0
@@ -1934,14 +2153,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3507999196119151145}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696369096707893
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1968,6 +2187,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &3508436495292221145
 GameObject:
   m_ObjectHideFlags: 0
@@ -1997,7 +2222,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3508436495292221145}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.14, y: 0, z: 0.33}
+  m_LocalPosition: {x: 0.04, y: 0, z: 0.15}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8024466932918366004}
@@ -2057,14 +2282,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3508436495292221145}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368551503818
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2091,6 +2316,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &3537836904603059942
 GameObject:
   m_ObjectHideFlags: 0
@@ -2180,14 +2411,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3537836904603059942}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696369647194364
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2214,6 +2445,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &3643902547270201824
 GameObject:
   m_ObjectHideFlags: 0
@@ -2247,7 +2484,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8024466932918366004}
-  m_RootOrder: 58
+  m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2895293545717989649
 MeshFilter:
@@ -2303,14 +2540,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3643902547270201824}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368962073764
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2337,6 +2574,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &3705817579709407450
 GameObject:
   m_ObjectHideFlags: 0
@@ -2370,7 +2613,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8024466932918366004}
-  m_RootOrder: 44
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3626783126487708130
 MeshFilter:
@@ -2426,14 +2669,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3705817579709407450}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368404714647
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2460,6 +2703,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &3771895246886789006
 GameObject:
   m_ObjectHideFlags: 0
@@ -2493,7 +2742,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8024466932918366004}
-  m_RootOrder: 52
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8953339938073923925
 MeshFilter:
@@ -2549,14 +2798,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3771895246886789006}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696370182643971
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2583,6 +2832,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &3821318728822703715
 GameObject:
   m_ObjectHideFlags: 0
@@ -2672,14 +2927,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3821318728822703715}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368924945524
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2706,6 +2961,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &3890306426791479999
 GameObject:
   m_ObjectHideFlags: 0
@@ -2739,7 +3000,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8024466932918366004}
-  m_RootOrder: 47
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5653879384810245300
 MeshFilter:
@@ -2795,14 +3056,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3890306426791479999}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368225396668
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2829,6 +3090,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &3946478876286244441
 GameObject:
   m_ObjectHideFlags: 0
@@ -2862,7 +3129,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8024466932918366004}
-  m_RootOrder: 46
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4080904809132235957
 MeshFilter:
@@ -2918,14 +3185,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3946478876286244441}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696369680961964
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2952,6 +3219,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &4090516125003978986
 GameObject:
   m_ObjectHideFlags: 0
@@ -3041,14 +3314,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4090516125003978986}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696369718381347
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3075,6 +3348,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &4204479122303082864
 GameObject:
   m_ObjectHideFlags: 0
@@ -3164,14 +3443,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4204479122303082864}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368869245413
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3198,6 +3477,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &4211156563695620174
 GameObject:
   m_ObjectHideFlags: 0
@@ -3287,14 +3572,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4211156563695620174}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368642829545
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3321,6 +3606,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &4331905137384597383
 GameObject:
   m_ObjectHideFlags: 0
@@ -3410,14 +3701,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4331905137384597383}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368539596537
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3444,6 +3735,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &4687858524670165770
 GameObject:
   m_ObjectHideFlags: 0
@@ -3477,7 +3774,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8024466932918366004}
-  m_RootOrder: 48
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8367739063788739946
 MeshFilter:
@@ -3533,14 +3830,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4687858524670165770}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368421627549
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3567,6 +3864,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &5208823425608864030
 GameObject:
   m_ObjectHideFlags: 0
@@ -3600,7 +3903,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8024466932918366004}
-  m_RootOrder: 54
+  m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8643602621474970729
 MeshFilter:
@@ -3656,14 +3959,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5208823425608864030}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368803389768
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3690,6 +3993,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &5317525907855398351
 GameObject:
   m_ObjectHideFlags: 0
@@ -3779,14 +4088,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5317525907855398351}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368050217335
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3813,6 +4122,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &5320692382601075990
 GameObject:
   m_ObjectHideFlags: 0
@@ -3842,11 +4157,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5320692382601075990}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.44, y: 0, z: 0.09}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8024466932918366004}
-  m_RootOrder: 42
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5618884785009880784
 MeshFilter:
@@ -3902,14 +4217,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5320692382601075990}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696369067632698
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3936,6 +4251,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &5385333728270045097
 GameObject:
   m_ObjectHideFlags: 0
@@ -4025,14 +4346,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5385333728270045097}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368785705839
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4059,6 +4380,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &5402420588732942983
 GameObject:
   m_ObjectHideFlags: 0
@@ -4148,14 +4475,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5402420588732942983}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696369321693515
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4182,6 +4509,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &5698637519984563672
 GameObject:
   m_ObjectHideFlags: 0
@@ -4215,7 +4548,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8024466932918366004}
-  m_RootOrder: 41
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1247419762036230529
 MeshFilter:
@@ -4271,14 +4604,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5698637519984563672}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368043578606
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4305,6 +4638,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &5717167628370636594
 GameObject:
   m_ObjectHideFlags: 0
@@ -4394,14 +4733,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5717167628370636594}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368650489613
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4428,6 +4767,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &6199697294325384090
 GameObject:
   m_ObjectHideFlags: 0
@@ -4517,14 +4862,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6199697294325384090}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368732325006
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4551,6 +4896,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &6415314332316508566
 GameObject:
   m_ObjectHideFlags: 0
@@ -4640,14 +4991,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6415314332316508566}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368661199972
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4674,6 +5025,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &6415373202823929127
 GameObject:
   m_ObjectHideFlags: 0
@@ -4736,7 +5093,6 @@ Transform:
   - {fileID: 5931804937791766356}
   - {fileID: 3430134331708761306}
   - {fileID: 5112311613370379167}
-  - {fileID: 7264257607254818839}
   - {fileID: 6080851813355647195}
   - {fileID: 7970418841138704118}
   - {fileID: 2102892161939987561}
@@ -4761,6 +5117,8 @@ Transform:
   - {fileID: 5472399839278715572}
   - {fileID: 864856975194193049}
   - {fileID: 541029050504202263}
+  - {fileID: 3589118654854223546}
+  - {fileID: 3811621460164485242}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4797,7 +5155,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8024466932918366004}
-  m_RootOrder: 59
+  m_RootOrder: 58
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2953389259044622954
 MeshFilter:
@@ -4853,14 +5211,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6467646945627276679}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696369484642573
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4887,129 +5245,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &6703033908448708754
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7264257607254818839}
-  - component: {fileID: 1095868852845808428}
-  - component: {fileID: 5108752879338679893}
-  - component: {fileID: 3454696368894558286}
-  - component: {fileID: 3454696368894558287}
-  - component: {fileID: 3454696368894558275}
-  m_Layer: 0
-  m_Name: Cylinder_cell.061
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7264257607254818839
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6703033908448708754}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 1.04, y: 0, z: 0.8}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_Children: []
-  m_Father: {fileID: 8024466932918366004}
-  m_RootOrder: 35
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1095868852845808428
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6703033908448708754}
-  m_Mesh: {fileID: -2295945919409315402, guid: f089b4ae9a54eca45b7c1e9c569ded60, type: 3}
---- !u!23 &5108752879338679893
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6703033908448708754}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: c1568f6b846552c4b82e738690372b85, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!54 &3454696368894558286
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6703033908448708754}
-  serializedVersion: 2
-  m_Mass: 0.1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
---- !u!64 &3454696368894558287
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6703033908448708754}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: -2295945919409315402, guid: f089b4ae9a54eca45b7c1e9c569ded60, type: 3}
---- !u!114 &3454696368894558275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6703033908448708754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &6871767793927820329
 GameObject:
   m_ObjectHideFlags: 0
@@ -5043,7 +5284,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8024466932918366004}
-  m_RootOrder: 38
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &9077380482830237420
 MeshFilter:
@@ -5099,14 +5340,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6871767793927820329}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696369941602737
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5133,6 +5374,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &6891819346560662466
 GameObject:
   m_ObjectHideFlags: 0
@@ -5166,7 +5413,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8024466932918366004}
-  m_RootOrder: 53
+  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3775902511473766241
 MeshFilter:
@@ -5222,14 +5469,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6891819346560662466}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368991550966
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5256,6 +5503,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &7007383518777227531
 GameObject:
   m_ObjectHideFlags: 0
@@ -5289,7 +5542,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8024466932918366004}
-  m_RootOrder: 56
+  m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &141330445030260741
 MeshFilter:
@@ -5345,14 +5598,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7007383518777227531}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368816502364
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5379,6 +5632,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &7027021185676052477
 GameObject:
   m_ObjectHideFlags: 0
@@ -5468,14 +5727,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7027021185676052477}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368644226370
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5502,6 +5761,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &7148751054236685343
 GameObject:
   m_ObjectHideFlags: 0
@@ -5535,7 +5800,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8024466932918366004}
-  m_RootOrder: 50
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7236849259875193361
 MeshFilter:
@@ -5591,14 +5856,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7148751054236685343}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368634781213
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5625,6 +5890,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &7178723443134384599
 GameObject:
   m_ObjectHideFlags: 0
@@ -5654,7 +5925,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7178723443134384599}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.49, y: 0, z: 0.12}
+  m_LocalPosition: {x: 0.12, y: 0, z: 0.06}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8024466932918366004}
@@ -5714,14 +5985,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7178723443134384599}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368781742809
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5748,6 +6019,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &7211554994173514868
 GameObject:
   m_ObjectHideFlags: 0
@@ -5837,14 +6114,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7211554994173514868}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368695332200
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5871,6 +6148,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &7229237934350342168
 GameObject:
   m_ObjectHideFlags: 0
@@ -5960,14 +6243,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7229237934350342168}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368634586503
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5994,6 +6277,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &7302467368019657383
 GameObject:
   m_ObjectHideFlags: 0
@@ -6027,7 +6316,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8024466932918366004}
-  m_RootOrder: 51
+  m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6568535613646600082
 MeshFilter:
@@ -6083,14 +6372,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7302467368019657383}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368625065407
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6117,6 +6406,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &7349304138601845165
 GameObject:
   m_ObjectHideFlags: 0
@@ -6150,7 +6445,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8024466932918366004}
-  m_RootOrder: 37
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5304818921045080821
 MeshFilter:
@@ -6206,14 +6501,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7349304138601845165}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696369600080312
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6240,6 +6535,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &7530496311313989181
 GameObject:
   m_ObjectHideFlags: 0
@@ -6329,14 +6630,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7530496311313989181}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368590013119
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6363,6 +6664,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &7682696268124680544
 GameObject:
   m_ObjectHideFlags: 0
@@ -6452,14 +6759,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7682696268124680544}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368938409967
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6486,6 +6793,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &7832058266334402488
 GameObject:
   m_ObjectHideFlags: 0
@@ -6519,7 +6832,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8024466932918366004}
-  m_RootOrder: 45
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4549079744279883340
 MeshFilter:
@@ -6575,14 +6888,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7832058266334402488}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696369844505736
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6609,6 +6922,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &7907923445916698922
 GameObject:
   m_ObjectHideFlags: 0
@@ -6698,14 +7017,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7907923445916698922}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368957932649
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6732,6 +7051,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &8045156260346208556
 GameObject:
   m_ObjectHideFlags: 0
@@ -6821,14 +7146,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8045156260346208556}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696369368849220
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6855,6 +7180,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &8073547962083172543
 GameObject:
   m_ObjectHideFlags: 0
@@ -6944,14 +7275,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8073547962083172543}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696368794133608
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6978,6 +7309,141 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
+--- !u!1 &8123466253926924593
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3589118654854223546}
+  - component: {fileID: 2103830483137850803}
+  - component: {fileID: 5689450522807670777}
+  - component: {fileID: 5500300395037130333}
+  - component: {fileID: 3302774492972001019}
+  - component: {fileID: 7034329901470526910}
+  m_Layer: 0
+  m_Name: Cylinder_cell.140 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3589118654854223546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8123466253926924593}
+  m_LocalRotation: {x: -0.65927565, y: 0.25564757, z: 0.25564757, w: 0.65927565}
+  m_LocalPosition: {x: 4.99, y: 0, z: 1.48}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_Children: []
+  m_Father: {fileID: 8024466932918366004}
+  m_RootOrder: 59
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 42.390003}
+--- !u!33 &2103830483137850803
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8123466253926924593}
+  m_Mesh: {fileID: 488744606150046696, guid: f089b4ae9a54eca45b7c1e9c569ded60, type: 3}
+--- !u!23 &5689450522807670777
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8123466253926924593}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: c1568f6b846552c4b82e738690372b85, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!54 &5500300395037130333
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8123466253926924593}
+  serializedVersion: 2
+  m_Mass: 10
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
+--- !u!64 &3302774492972001019
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8123466253926924593}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 488744606150046696, guid: f089b4ae9a54eca45b7c1e9c569ded60, type: 3}
+--- !u!114 &7034329901470526910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8123466253926924593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &8519557036371401027
 GameObject:
   m_ObjectHideFlags: 0
@@ -7067,14 +7533,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8519557036371401027}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696369270369620
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7101,6 +7567,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &8543970010813680782
 GameObject:
   m_ObjectHideFlags: 0
@@ -7190,14 +7662,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8543970010813680782}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696369773687198
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7224,6 +7696,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &8559813391785271652
 GameObject:
   m_ObjectHideFlags: 0
@@ -7313,14 +7791,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8559813391785271652}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696369536027153
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7347,6 +7825,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
 --- !u!1 &8950921038827475369
 GameObject:
   m_ObjectHideFlags: 0
@@ -7380,7 +7864,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 8024466932918366004}
-  m_RootOrder: 36
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6140011630313011443
 MeshFilter:
@@ -7436,14 +7920,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8950921038827475369}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &3454696370062810109
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7470,3 +7954,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae09aec785c8424a9d36ee9369b76db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  smokeVFX: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+    type: 3}
+  smokePerHit: 2
