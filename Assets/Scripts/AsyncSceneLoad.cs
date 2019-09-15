@@ -6,10 +6,14 @@ namespace Game
 {
     public class AsyncSceneLoad : MonoBehaviour
     {
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.L)) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
 
-
-		public void SceneLoad()
+        public void SceneLoad()
 		{
+            /*
 			IEnumerator AsyncLoading()
 			{
 				SceneManager.LoadSceneAsync(0, LoadSceneMode.Single);
@@ -17,6 +21,8 @@ namespace Game
 			}
 
 			StartCoroutine(AsyncLoading());
-		}
+            */
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
 	}
 }

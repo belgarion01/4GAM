@@ -368,6 +368,55 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 113919063}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &134009451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59b6606ef2548734bb6d11b9d160bc7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  rotation:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 360
+  skyIntensityMode:
+    m_OverrideState: 0
+    m_Value: 0
+  exposure:
+    m_OverrideState: 0
+    m_Value: 12.24
+  multiplier:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+  upperHemisphereLuxValue:
+    m_OverrideState: 0
+    m_Value: 6.376198
+    min: 0
+  desiredLuxValue:
+    m_OverrideState: 0
+    m_Value: 20000
+  updateMode:
+    m_OverrideState: 0
+    m_Value: 0
+  updatePeriod:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+  includeSunInBaking:
+    m_OverrideState: 0
+    m_Value: 0
+  hdriSky:
+    m_OverrideState: 0
+    m_Value: {fileID: 8900000, guid: ef8fac0718295a14381b048e398e78e2, type: 3}
 --- !u!1 &145397062
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,6 +495,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 156098805}
+  - component: {fileID: 156098807}
+  - component: {fileID: 156098806}
   m_Layer: 0
   m_Name: Barrier
   m_TagString: Untagged
@@ -464,6 +515,7 @@ Transform:
   m_LocalPosition: {x: -0.18, y: -0.42, z: -0.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1298963173}
   - {fileID: 1481406674}
   - {fileID: 455548097}
   - {fileID: 2136212172}
@@ -471,6 +523,64 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &156098806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156098804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267251ce805f8403d971ed00a6d58cf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: 
+  event: {fileID: 11400000, guid: 03800f388ee9fd743a869680ca3967d4, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 156098804}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  gameActionResponses: []
+--- !u!114 &156098807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156098804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267251ce805f8403d971ed00a6d58cf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: 
+  event: {fileID: 11400000, guid: ccc48802717234e45b69569d7c28b208, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 156098804}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  gameActionResponses: []
 --- !u!1 &159412704
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,1936 +790,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8587510030897958359, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 8587510030897958359, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 5112311613370379167, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 5112311613370379167, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 7264257607254818839, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.31
-      objectReference: {fileID: 0}
-    - target: {fileID: 7264257607254818839, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 9.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7264257607254818839, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.39914998
-      objectReference: {fileID: 0}
-    - target: {fileID: 7264257607254818839, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5836776
-      objectReference: {fileID: 0}
-    - target: {fileID: 7264257607254818839, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.58367705
-      objectReference: {fileID: 0}
-    - target: {fileID: 7264257607254818839, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.39915025
-      objectReference: {fileID: 0}
-    - target: {fileID: 7264257607254818839, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90.00001
-      objectReference: {fileID: 0}
-    - target: {fileID: 7264257607254818839, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 111.267006
-      objectReference: {fileID: 0}
-    - target: {fileID: 7770386539883170911, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7770386539883170911, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369503762148, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369503762148, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369503762148, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369503762148, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369503762169, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696369503762169, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368996311894, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368996311894, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368996311894, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368996311894, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368996311915, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368996311915, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368432672595, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368432672595, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368432672595, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368432672595, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368432672596, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368432672596, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369390134777, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369390134777, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369390134777, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369390134777, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369390134778, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696369390134778, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368629800104, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368629800104, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368629800104, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368629800104, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368629800109, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368629800109, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369320426214, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369320426214, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369320426214, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369320426214, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369320426235, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696369320426235, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368986600848, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368986600848, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368986600848, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368986600848, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368986600853, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368986600853, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368130458775, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368130458775, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368130458775, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368130458775, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368130458792, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368130458792, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368898145565, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368898145565, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368898145565, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368898145565, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368898145566, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368898145566, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369889665843, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369889665843, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369889665843, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369889665843, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369889665844, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696369889665844, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369858927286, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369858927286, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369858927286, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369858927286, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369858927307, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696369858927307, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369832890743, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369832890743, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369832890743, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369832890743, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369832890760, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696369832890760, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368744789361, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368744789361, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368744789361, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368744789361, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368744789362, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368744789362, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369853023936, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369853023936, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369853023936, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369853023936, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369853023941, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696369853023941, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369581562237, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369581562237, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369581562237, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369581562237, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369581562238, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696369581562238, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369096707892, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369096707892, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369096707892, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369096707892, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369096707913, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696369096707913, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368551503821, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368551503821, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368551503821, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368551503821, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368551503822, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368551503822, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369647194367, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369647194367, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369647194367, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369647194367, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369647194352, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696369647194352, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368962073767, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368962073767, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368962073767, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368962073767, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368962073784, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368962073784, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368404714646, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368404714646, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368404714646, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368404714646, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368404714667, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368404714667, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696370182643970, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696370182643970, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696370182643970, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696370182643970, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696370182643975, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696370182643975, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368924945527, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368924945527, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368924945527, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368924945527, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368924945544, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368924945544, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368225396671, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368225396671, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368225396671, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368225396671, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368225396656, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368225396656, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369680961967, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369680961967, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369680961967, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369680961967, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369680961952, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696369680961952, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369718381346, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369718381346, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369718381346, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369718381346, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369718381351, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696369718381351, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368869245412, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368869245412, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368869245412, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368869245412, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368869245433, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368869245433, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368642829544, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368642829544, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368642829544, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368642829544, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368642829549, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368642829549, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368539596536, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368539596536, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368539596536, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368539596536, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368539596541, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368539596541, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368421627548, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368421627548, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368421627548, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368421627548, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368421627537, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368421627537, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368803389771, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368803389771, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368803389771, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368803389771, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368803389772, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368803389772, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368050217334, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368050217334, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368050217334, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368050217334, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368050217355, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368050217355, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369067632701, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369067632701, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369067632701, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369067632701, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369067632702, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696369067632702, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368785705838, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368785705838, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368785705838, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368785705838, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368785705827, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368785705827, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369321693514, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369321693514, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369321693514, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369321693514, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369321693519, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696369321693519, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368043578593, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368043578593, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368043578593, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368043578593, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368043578594, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368043578594, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368650489612, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368650489612, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368650489612, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368650489612, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368650489601, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368650489601, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368732324993, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368732324993, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368732324993, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368732324993, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368732324994, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368732324994, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368661199975, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368661199975, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368661199975, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368661199975, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368661199992, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368661199992, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369484642572, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369484642572, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369484642572, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369484642572, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369484642561, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696369484642561, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368894558286, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368894558286, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368894558286, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368894558286, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368894558275, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368894558275, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369941602736, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369941602736, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369941602736, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369941602736, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369941602741, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696369941602741, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368991550473, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368991550473, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368991550473, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368991550473, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368991550474, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368991550474, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368816502367, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368816502367, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368816502367, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368816502367, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368816502352, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368816502352, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368644226373, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368644226373, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368644226373, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368644226373, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368644226374, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368644226374, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368634781212, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368634781212, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368634781212, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368634781212, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368634781201, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368634781201, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368781742808, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368781742808, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368781742808, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368781742808, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368781742813, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368781742813, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368695332203, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368695332203, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368695332203, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368695332203, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368695332204, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368695332204, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368634586502, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368634586502, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368634586502, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368634586502, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368634586523, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368634586523, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368625065406, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368625065406, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368625065406, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368625065406, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368625065395, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368625065395, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369600080315, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369600080315, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369600080315, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369600080315, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369600080316, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696369600080316, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368590013118, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368590013118, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368590013118, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368590013118, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368590013107, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368590013107, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368938409966, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368938409966, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368938409966, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368938409966, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368938409955, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368938409955, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369844505739, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369844505739, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369844505739, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369844505739, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369844505740, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696369844505740, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368957932648, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368957932648, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368957932648, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368957932648, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368957932653, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368957932653, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369368849223, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369368849223, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369368849223, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369368849223, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369368849240, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696369368849240, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368794133611, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368794133611, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368794133611, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368794133611, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696368794133612, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696368794133612, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369270369623, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369270369623, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369270369623, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369270369623, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369270369640, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696369270369640, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369773687185, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369773687185, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369773687185, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369773687185, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369773687186, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696369773687186, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369536027152, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369536027152, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369536027152, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369536027152, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696369536027157, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696369536027157, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696370062810108, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696370062810108, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696370062810108, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696370062810108, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3454696370062810097, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokeVFX
-      value: 
-      objectReference: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
-        type: 3}
-    - target: {fileID: 3454696370062810097, guid: 505300642abebf74390eb9e2e7890156,
-        type: 3}
-      propertyPath: smokePerHit
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 505300642abebf74390eb9e2e7890156, type: 3}
 --- !u!4 &180426732 stripped
@@ -2712,7 +892,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 192367228}
-  - component: {fileID: 192367227}
   m_Layer: 0
   m_Name: Director
   m_TagString: Untagged
@@ -2720,35 +899,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &192367227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 192367226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 267251ce805f8403d971ed00a6d58cf6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  note: 
-  event: {fileID: 11400000, guid: ccc48802717234e45b69569d7c28b208, type: 2}
-  unityEventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 980180410}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  gameActionResponses: []
 --- !u!4 &192367228
 Transform:
   m_ObjectHideFlags: 0
@@ -3278,55 +1428,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 430164666}
   m_CullTransparentMesh: 0
---- !u!114 &447787742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59b6606ef2548734bb6d11b9d160bc7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  active: 1
-  m_AdvancedMode: 0
-  rotation:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 360
-  skyIntensityMode:
-    m_OverrideState: 0
-    m_Value: 0
-  exposure:
-    m_OverrideState: 0
-    m_Value: 12.24
-  multiplier:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 0
-  upperHemisphereLuxValue:
-    m_OverrideState: 0
-    m_Value: 6.376198
-    min: 0
-  desiredLuxValue:
-    m_OverrideState: 0
-    m_Value: 20000
-  updateMode:
-    m_OverrideState: 0
-    m_Value: 0
-  updatePeriod:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-  includeSunInBaking:
-    m_OverrideState: 0
-    m_Value: 0
-  hdriSky:
-    m_OverrideState: 0
-    m_Value: {fileID: 8900000, guid: ef8fac0718295a14381b048e398e78e2, type: 3}
 --- !u!1001 &452908675
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3467,7 +1568,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 24c270741f157cc47901ab37f289a85a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 24c270741f157cc47901ab37f289a85a,
         type: 3}
@@ -3477,17 +1578,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 24c270741f157cc47901ab37f289a85a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 24c270741f157cc47901ab37f289a85a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 24c270741f157cc47901ab37f289a85a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 24c270741f157cc47901ab37f289a85a,
         type: 3}
@@ -4505,7 +2606,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bravo !
+  m_text: Victory Royale
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4514,8 +2615,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283449932
-  m_fontColor: {r: 0.29803923, g: 0.25882354, b: 0.3137255, a: 1}
+    rgba: 4293519849
+  m_fontColor: {r: 0.9150943, g: 0.9150943, b: 0.9150943, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4539,7 +2640,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 514
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -4550,7 +2651,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 8
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -4574,12 +2675,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 724333580}
-    characterCount: 7
+    characterCount: 14
     spriteCount: 0
     spaceCount: 1
-    wordCount: 1
+    wordCount: 2
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -5096,7 +3197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Profile: {fileID: 11400000, guid: c5a6037baa6cca640b2fe8d4fa07fa6b, type: 2}
   m_StaticLightingSkyUniqueID: 1
-  m_SkySettings: {fileID: 447787742}
+  m_SkySettings: {fileID: 0}
   m_SkySettingsFromProfile: {fileID: -7789508149548008801, guid: c5a6037baa6cca640b2fe8d4fa07fa6b,
     type: 2}
 --- !u!114 &838006372
@@ -5180,7 +3281,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 24c270741f157cc47901ab37f289a85a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 24c270741f157cc47901ab37f289a85a,
         type: 3}
@@ -5808,55 +3909,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1221931680}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1143905785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59b6606ef2548734bb6d11b9d160bc7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  active: 1
-  m_AdvancedMode: 0
-  rotation:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 360
-  skyIntensityMode:
-    m_OverrideState: 0
-    m_Value: 0
-  exposure:
-    m_OverrideState: 0
-    m_Value: 12.24
-  multiplier:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 0
-  upperHemisphereLuxValue:
-    m_OverrideState: 0
-    m_Value: 6.376198
-    min: 0
-  desiredLuxValue:
-    m_OverrideState: 0
-    m_Value: 20000
-  updateMode:
-    m_OverrideState: 0
-    m_Value: 0
-  updatePeriod:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-  includeSunInBaking:
-    m_OverrideState: 0
-    m_Value: 0
-  hdriSky:
-    m_OverrideState: 0
-    m_Value: {fileID: 8900000, guid: ef8fac0718295a14381b048e398e78e2, type: 3}
 --- !u!1 &980180410
 GameObject:
   m_ObjectHideFlags: 0
@@ -6285,6 +4337,101 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1272958870}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1298963172
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 156098805}
+    m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 4f68bacd36fa7354797612cb24f5c858,
+        type: 3}
+      propertyPath: m_Name
+      value: mur
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4f68bacd36fa7354797612cb24f5c858,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4f68bacd36fa7354797612cb24f5c858,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4f68bacd36fa7354797612cb24f5c858,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4f68bacd36fa7354797612cb24f5c858,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4f68bacd36fa7354797612cb24f5c858,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4f68bacd36fa7354797612cb24f5c858,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4f68bacd36fa7354797612cb24f5c858,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4f68bacd36fa7354797612cb24f5c858,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4f68bacd36fa7354797612cb24f5c858,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4f68bacd36fa7354797612cb24f5c858,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4f68bacd36fa7354797612cb24f5c858,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4f68bacd36fa7354797612cb24f5c858,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 612.64685
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4f68bacd36fa7354797612cb24f5c858,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 612.64667
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4f68bacd36fa7354797612cb24f5c858,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 612.64667
+      objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 4f68bacd36fa7354797612cb24f5c858,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f68bacd36fa7354797612cb24f5c858, type: 3}
+--- !u!4 &1298963173 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 4f68bacd36fa7354797612cb24f5c858,
+    type: 3}
+  m_PrefabInstance: {fileID: 1298963172}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1308812134
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6520,8 +4667,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280360737
-  m_fontColor: {r: 0.12991896, g: 0.12273052, b: 0.13207549, a: 1}
+    rgba: 4293190884
+  m_fontColor: {r: 0.8962264, g: 0.8962264, b: 0.8962264, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7058,7 +5205,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 24c270741f157cc47901ab37f289a85a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 24c270741f157cc47901ab37f289a85a,
         type: 3}
@@ -8309,7 +6456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 1}
+  m_Color: {r: 0.4056604, g: 0.3539961, b: 0.3539961, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -8472,7 +6619,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 24c270741f157cc47901ab37f289a85a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 24c270741f157cc47901ab37f289a85a,
         type: 3}
