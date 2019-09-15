@@ -32,7 +32,7 @@ namespace Game
 			outputPlayerCount?.SetValue(playerList.Count);
 			if (playerList.Count == 1)
 			{
-				onLastPlayer?.Invoke(gameObject);
+				onLastPlayer?.Invoke(playerList[0]);
 			}
 		}
 	}

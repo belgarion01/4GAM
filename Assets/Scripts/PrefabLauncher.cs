@@ -13,6 +13,7 @@ public class PrefabLauncher : MonoBehaviour
     public float lauchCooldown;
     private float currentLaunchCooldown;
     bool launchReady = true;
+    bool launchWasReady = true;
 
     public LayerMask clickableMask;
 
@@ -25,6 +26,10 @@ public class PrefabLauncher : MonoBehaviour
     {
         if (currentLaunchCooldown < lauchCooldown) currentLaunchCooldown += Time.deltaTime;
         launchReady = currentLaunchCooldown < lauchCooldown ? false : true;
+        if (launchReady && !launchWasReady) {
+            OnLaunchReady.Invoke();
+        }
+        launchWasReady = launchReady;
         Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
         if (Input.GetMouseButtonDown(0)) {

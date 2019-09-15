@@ -24,7 +24,7 @@ public class RoundManager : MonoBehaviour
 
     }
 
-    public void EndRound() {
-
+    public void EndRound(GameObject gameObject) {
+        transform.position = gameObject.transform.position;
     }
 }
