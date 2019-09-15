@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: Cotton Thin
   m_EditorClassIdentifier: 
   profile:
-    name: Cotton Thin
     scatteringDistance: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     transmissionTint: {r: 1, g: 1, b: 1, a: 1}
     texturingMode: 0
-    transmissionMode: 1
-    thicknessRemap: {x: 0.2, y: 1.5}
+    transmissionMode: 0
+    thicknessRemap: {x: 0.2, y: 1.500001}
     worldScale: 1
     ior: 1.4
     hash: 1080211988
