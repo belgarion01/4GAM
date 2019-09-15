@@ -45,7 +45,7 @@ namespace Game
 			int length = meshRenderers.Length;
 			for (int i = 0; i < length; i++)
 			{
-				meshRenderers[i].material.color = playerColor;
+				meshRenderers[i].material.SetColor("_BaseColor", playerColor);
 			}
 		}
 	}
