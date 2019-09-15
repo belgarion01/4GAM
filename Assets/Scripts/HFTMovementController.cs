@@ -56,7 +56,7 @@ namespace Game
 		private void Move()
 		{
 			if (!canMove) return;
-			rigidbody.velocity = movement * movementForce + Physics.gravity;
+			rigidbody.velocity = movement * movementForce + /*Physics.gravity*/new Vector3(0f, -3f, 0f);
 		}
 
 		private void Rotate()
