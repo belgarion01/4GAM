@@ -3,9 +3,10 @@ using UnityEngine;
 
 namespace Game
 {
-    public class HFTTextMeshName : MonoBehaviour
+    public class HFTColorSetter : MonoBehaviour
     {
 		public TextMeshPro textMesh = default;
+		public SkinnedMeshRenderer[] meshRenderers = default;
 		public HFTGamepad gamepad = default;
 
 		private static int playerNumber = 0;
@@ -40,6 +41,12 @@ namespace Game
 
 			gamepad.color = playerColor;
 			textMesh.faceColor = playerColor;
+
+			int length = meshRenderers.Length;
+			for (int i = 0; i < length; i++)
+			{
+				meshRenderers[i].material.color = playerColor;
+			}
 		}
 	}
 }
