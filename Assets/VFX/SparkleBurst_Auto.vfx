@@ -3451,10 +3451,9 @@ VisualEffectResource:
       VFX_VARYING_EMISSIVE\n\t\t\t\t\t\t\t\t\t#if HDRP_USE_EMISSIVE_COLOR\n\t\t\t\t\t\t\t\t\to.VFX_VARYING_EMISSIVE
       = color;\n\t\t\t\t\t\t\t\t\t#elif HDRP_USE_ADDITIONAL_EMISSIVE_COLOR\n\t\t\t\t\t\t\t\t\tfloat4
       emissiveColor = (float4)0;\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t    float
-      tmp_bf = age / lifetime;\n\t\t\t\t\t\t\t\t\t    float tmp_bh = max(tmp_bf, (float)0);\n\t\t\t\t\t\t\t\t\t
-      \   float tmp_bj = min(tmp_bh, (float)1);\n\t\t\t\t\t\t\t\t\t    float4 tmp_bk
-      = SampleGradient(uniform_e,tmp_bj);\n\t\t\t\t\t\t\t\t\t    \n\t\t\t\t\t\t\t\t\t
-      \   emissiveColor = tmp_bk;\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\to.VFX_VARYING_EMISSIVE
+      tmp_bf = age / lifetime;\n\t\t\t\t\t\t\t\t\t    float tmp_bg = saturate(tmp_bf);\n\t\t\t\t\t\t\t\t\t
+      \   float4 tmp_bh = SampleGradient(uniform_e,tmp_bg);\n\t\t\t\t\t\t\t\t\t    \n\t\t\t\t\t\t\t\t\t
+      \   emissiveColor = tmp_bh;\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\to.VFX_VARYING_EMISSIVE
       = emissiveColor;\n\t\t\t\t\t\t\t\t\t#endif\n\t\t\t\t\t\t\t\t\t#endif\n\t\t\t\t\t\t\t\t\t#if
       HDRP_USE_ADDITIONAL_BASE_COLOR\n\t\t\t\t\t\t\t\t\t#ifdef VFX_VARYING_COLOR\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\to.VFX_VARYING_COLOR
       = baseColor;\n\t\t\t\t\t\t\t\t\t#endif\n\t\t\t\t\t\t\t\t\t#endif\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\n\t\t\t\treturn
