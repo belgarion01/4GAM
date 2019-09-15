@@ -40,7 +40,7 @@ public class PrefabLauncher : MonoBehaviour
             if (Physics.Raycast(mouseRay, out hit, Mathf.Infinity, clickableMask)&&launchReady)
             {
                 Instantiate(targetPrefab, hit.point, Quaternion.Euler(-90f, 0f, 0f));
-                StartCoroutine(LaunchPrefab(mouseRay.direction));
+                StartCoroutine(LaunchPrefab((hit.point-origin.position).normalized));
                 currentLaunchCooldown = 0f;
                 OnClickSucces.Invoke();
             }
@@ -53,7 +53,7 @@ public class PrefabLauncher : MonoBehaviour
 
     IEnumerator LaunchPrefab(Vector3 direction) {
         yield return new WaitForSeconds(timeBeforeLaunch);
-        GameObject bol = Instantiate(instantiatedPrefab, transform.position, Quaternion.identity);
+        GameObject bol = Instantiate(instantiatedPrefab, origin.position, Quaternion.identity);
         bol.GetComponent<Rigidbody>().AddForce(direction * launchForce, ForceMode.VelocityChange);
         OnLaunching.Invoke();
     }
