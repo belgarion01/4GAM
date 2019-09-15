@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2753.2786, g: 3399.9917, b: 3527.2495, a: 1}
+  m_IndirectSpecularColor: {r: 2754.6519, g: 3400.1191, b: 3523.0312, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -121,6 +121,55 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &101171574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59b6606ef2548734bb6d11b9d160bc7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  rotation:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 360
+  skyIntensityMode:
+    m_OverrideState: 0
+    m_Value: 0
+  exposure:
+    m_OverrideState: 0
+    m_Value: 12.24
+  multiplier:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+  upperHemisphereLuxValue:
+    m_OverrideState: 0
+    m_Value: 6.376198
+    min: 0
+  desiredLuxValue:
+    m_OverrideState: 0
+    m_Value: 20000
+  updateMode:
+    m_OverrideState: 0
+    m_Value: 0
+  updatePeriod:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+  includeSunInBaking:
+    m_OverrideState: 0
+    m_Value: 0
+  hdriSky:
+    m_OverrideState: 0
+    m_Value: {fileID: 8900000, guid: ef8fac0718295a14381b048e398e78e2, type: 3}
 --- !u!1 &236727370
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,7 +527,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Profile: {fileID: 11400000, guid: c5a6037baa6cca640b2fe8d4fa07fa6b, type: 2}
   m_StaticLightingSkyUniqueID: 1
-  m_SkySettings: {fileID: 1980462956}
+  m_SkySettings: {fileID: 101171574}
   m_SkySettingsFromProfile: {fileID: -7789508149548008801, guid: c5a6037baa6cca640b2fe8d4fa07fa6b,
     type: 2}
 --- !u!114 &838006372
@@ -993,55 +1042,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d300369128a6724697c850a4e655e66, type: 3}
---- !u!114 &1980462956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59b6606ef2548734bb6d11b9d160bc7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  active: 1
-  m_AdvancedMode: 0
-  rotation:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 360
-  skyIntensityMode:
-    m_OverrideState: 0
-    m_Value: 0
-  exposure:
-    m_OverrideState: 0
-    m_Value: 12.24
-  multiplier:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 0
-  upperHemisphereLuxValue:
-    m_OverrideState: 0
-    m_Value: 6.376198
-    min: 0
-  desiredLuxValue:
-    m_OverrideState: 0
-    m_Value: 20000
-  updateMode:
-    m_OverrideState: 0
-    m_Value: 0
-  updatePeriod:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-  includeSunInBaking:
-    m_OverrideState: 0
-    m_Value: 0
-  hdriSky:
-    m_OverrideState: 0
-    m_Value: {fileID: 8900000, guid: ef8fac0718295a14381b048e398e78e2, type: 3}
 --- !u!1001 &2136212171
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1230,7 +1230,7 @@ PrefabInstance:
     - target: {fileID: 1800726995194339330, guid: ebe51878ef1595f4980c362970e70456,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.898
+      value: 0.47
       objectReference: {fileID: 0}
     - target: {fileID: 1800726995194339330, guid: ebe51878ef1595f4980c362970e70456,
         type: 3}
@@ -1277,10 +1277,140 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Gradient.m_Array.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Gradient.m_Array.Array.data[0].m_Value.key0.r
+      value: 0.8301887
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Gradient.m_Array.Array.data[0].m_Value.key0.g
+      value: 0.8301887
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Gradient.m_Array.Array.data[0].m_Value.key0.b
+      value: 0.8301887
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Gradient.m_Array.Array.data[0].m_Value.key0.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Gradient.m_Array.Array.data[0].m_Value.key1.r
+      value: 0.5660378
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Gradient.m_Array.Array.data[0].m_Value.key1.g
+      value: 0.5660378
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Gradient.m_Array.Array.data[0].m_Value.key1.b
+      value: 0.5660378
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Gradient.m_Array.Array.data[0].m_Value.key2.r
+      value: 0.7075472
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Gradient.m_Array.Array.data[0].m_Value.key2.g
+      value: 0.7075472
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Gradient.m_Array.Array.data[0].m_Value.key2.b
+      value: 0.7075472
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Gradient.m_Array.Array.data[0].m_Value.ctime1
+      value: 20239
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Gradient.m_Array.Array.data[0].m_Value.ctime2
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Gradient.m_Array.Array.data[0].m_Value.atime1
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Gradient.m_Array.Array.data[0].m_Value.m_NumColorKeys
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Gradient.m_Array.Array.data[0].m_Value.m_NumAlphaKeys
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Gradient.m_Array.Array.data[0].m_Name
+      value: Color
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Gradient.m_Array.Array.data[0].m_Overridden
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[1].m_Value
+      value: 1.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[1].m_Name
+      value: Size
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[1].m_Overridden
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[2].m_Value
+      value: 3.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[2].m_Name
+      value: Roundness
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800726995194339331, guid: ebe51878ef1595f4980c362970e70456,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[2].m_Overridden
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1800726995194339328, guid: ebe51878ef1595f4980c362970e70456,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800726995194339328, guid: ebe51878ef1595f4980c362970e70456,
+        type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebe51878ef1595f4980c362970e70456, type: 3}
