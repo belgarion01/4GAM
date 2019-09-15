@@ -22,10 +22,13 @@ public class PrefabLauncher : MonoBehaviour
     public UnityEvent OnLaunching;
     public UnityEvent OnLaunchReady;
 
+    public GameObject launchIcon;
+
     void Update()
     {
         if (currentLaunchCooldown < lauchCooldown) currentLaunchCooldown += Time.deltaTime;
         launchReady = currentLaunchCooldown < lauchCooldown ? false : true;
+        launchIcon.SetActive(launchReady ? true : false);
         if (launchReady && !launchWasReady) {
             OnLaunchReady.Invoke();
         }
